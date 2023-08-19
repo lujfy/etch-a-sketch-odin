@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Etch a Sketch</h1>
+
+    <div class="nav">
+        <button class="clear" onclick="clearBoard()">Clear</button>
+        <button class="save">Save</button>
+        <button class="black" onclick="setColor('black')"> Black </button>
+        <button class="random" onclick="setColor('random')" >Randomize</button>
+    </div>
+
+    
+
+    <div class="gridBtn">
+        <button onclick="createBoard(16)">16x16</button>
+        <button onclick="createBoard(32)">32x32</button>
+        <button onclick="createBoard(64)">64x64</button>
+        <button id="popup" >Select your own</button>
+    </div>
+    <p id="message"></p>
+    <p>click to draw</p>
+    
+    <div class="board">
+        
+    </div>
+</body>
+</html>
